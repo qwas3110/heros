@@ -1,3 +1,5 @@
+import request from '@/utils/request';
+
 
 export default {
   state: [],
@@ -19,7 +21,8 @@ export default {
   },
   effects: {
     *fetch({ type, payload }, { put, call, select }) {
-      const data = [
+      const data = yield request('https://pvp.qq.com/web201605/js/herolist.json');
+      const localdata = [
         {
           ename: 105,
           cname: '廉颇',
@@ -40,7 +43,7 @@ export default {
       yield put({
         type: 'save',
         payload: {
-          heros: data
+          heros: data || localdata
         }
       })
     },
