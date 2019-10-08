@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="380bd9ca-6b25-4be0-9ca2-ec80ce7dda9d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.umirc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.umirc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/hero.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570524543421</updated>
-      <workItem from="1570524544692" duration="1944000" />
+      <workItem from="1570524544692" duration="2227000" />
     </task>
     <servers />
   </component>

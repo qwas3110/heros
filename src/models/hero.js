@@ -21,7 +21,7 @@ export default {
   },
   effects: {
     *fetch({ type, payload }, { put, call, select }) {
-      const data = yield request('https://pvp.qq.com/web201605/js/herolist.json');
+      const data = yield request('/api/herolist.json');
       const localdata = [
         {
           ename: 105,
