@@ -1,10 +1,12 @@
-
 import styles from './hero.css';
-
-export default function() {
+import { connect } from 'dva';  //---step1
+function Hero(props) {          //---step2
+  console.log(props.hero);      //---step4
   return (
     <div className={styles.normal}>
       <h1>Page hero</h1>
+      <h2>This is {props.hero}</h2>
     </div>
   );
 }
+export default connect(({ hero }) => ({ hero }))(Hero);  //--- step3
