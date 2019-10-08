@@ -5,7 +5,7 @@ function Hero(props) {          //---step2
   return (
     <div className={styles.normal}>
       <h1>Page hero</h1>
-      <h2>This is {props.hero}</h2>
+      <h2>This is {JSON.stringify(props.hero)}</h2>
     </div>
   );
 }
