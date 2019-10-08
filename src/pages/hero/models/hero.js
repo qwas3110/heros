@@ -1,11 +1,13 @@
-import {getHeroDetails, queryHeroList} from '@/services/api';
+import {getHeroDetails, queryHeroList, getFreeHeros} from '@/services/api';
 
 
 
 export default {
   state: {
     heros: [],
-    filterKey:0,
+    freeheros: [],
+    filterKey: 0,
+    itemHover: 0,
   },
   subscriptions: {
     setup({ dispatch, history }) {
@@ -27,12 +29,14 @@ export default {
     *fetch({ type, payload }, { put, call, select }) {
       const herolist = yield call(queryHeroList);
       const herodetails = yield call(getHeroDetails, { ename: 110 });
+      const freeheros = yield call(getFreeHeros, { number: 13 });
       console.log(herodetails);
 
       yield put({
         type: 'save',
         payload: {
           heros: herolist,
+          freeheros: freeheros
         },
       });
     },

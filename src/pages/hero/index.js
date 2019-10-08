@@ -1,6 +1,7 @@
 import styles from './index.less';
 import { connect } from 'dva';
 import { Row, Col, Radio, Card } from 'antd';
+import FreeHeroItem from './components/FreeHeroItem';
 
 const RadioGroup = Radio.Group;
 const heroType = [
@@ -16,15 +17,39 @@ const heroType = [
 
 
 function Hero({ hero,dispatch }) {
-  const { heros = [],filterKey=0 } = hero;
+  const { heros = [], filterKey = 0, freeheros = [] ,itemHover=0} = hero;
   const onChange = e => {
-    dispatch({type:"hero/save",payload:{
-        filterKey:e.target.value
-      }})
+    dispatch({
+      type: 'hero/save',
+      payload: {
+        filterKey: e.target.value,
+      },
+    });
   };
+
+  const onItemHover=e=>{
+    dispatch({
+      type: 'hero/save',
+      payload: {
+        itemHover: e
+      },
+    });
+  }
 
   return (
     <div className={styles.normal}>
+      <div className={styles.info}>
+        <Row className={styles.freehero}>
+          <Col span={24}>
+            <p>周免英雄</p>
+            <div>
+              {freeheros.map((data,index) => {
+                return <FreeHeroItem data={data} itemHover={itemHover} onItemHover={onItemHover} thisIndex={index} key={index}/>
+              })}
+            </div>
+          </Col>
+        </Row>
+      </div>
       <Card className={styles.radioPanel}>
         <RadioGroup onChange={onChange} value={filterKey}>
           {heroType.map(data => (
@@ -39,13 +64,15 @@ function Hero({ hero,dispatch }) {
           .filter(item => filterKey === 0 || item.hero_type === filterKey)
           .reverse()
           .map(item => (
-          <Col key={item.ename} span={3} className={styles.heroitem}>
-            <img
-              src={`https://game.gtimg.cn/images/yxzj/img201606/heroimg/${item.ename}/${item.ename}.jpg`}
-            />
-            <p>{item.cname}</p>
-          </Col>
-        ))}
+            <Col key={item.ename} span={3} className={styles.heroitem}>
+              <img
+                src={`https://game.gtimg.cn/images/yxzj/img201606/heroimg/${item.ename}/${
+                  item.ename
+                }.jpg`}
+              />
+              <p>{item.cname}</p>
+            </Col>
+          ))}
       </Row>
     </div>
   );
