@@ -5,7 +5,7 @@ function Item(props) {          //---step2
   return (
     <div className={styles.normal}>
       <h1>Page Item</h1>
-      <h2>This is {props.item}</h2>
+      <h2>This is {JSON.stringify(props.item)}</h2>
     </div>
   );
 }
