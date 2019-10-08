@@ -5,6 +5,7 @@ import {getHeroDetails, queryHeroList} from '@/services/api';
 export default {
   state: {
     heros: [],
+    filterKey:0,
   },
   subscriptions: {
     setup({ dispatch, history }) {

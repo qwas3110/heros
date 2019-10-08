@@ -4,6 +4,7 @@ import {queryItem} from '@/services/api';
 export default {
   state: {
     items: [],
+    filterKey: 0,
   },
   subscriptions: {
     setup({ dispatch, history }) {
