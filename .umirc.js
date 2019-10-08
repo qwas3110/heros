@@ -1,5 +1,9 @@
 
 // ref: https://umijs.org/config/
+
+const path = require('path');
+
+
 export default {
   treeShaking: true,
   plugins: [
@@ -29,4 +33,9 @@ export default {
   //     "pathRewrite": { "^/api" : "" }               //---step4 表示是否重写请求地址，比如这里的配置，就是把 /api 替换成空字符
   //   }
   // }
+  alias: {
+    utils: path.resolve(__dirname, 'src/utils'),
+    services: path.resolve(__dirname, 'src/services'),
+    models: path.resolve(__dirname, 'src/models'),
+  },
 }

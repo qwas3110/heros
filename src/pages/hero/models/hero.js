@@ -1,4 +1,6 @@
-import { queryHeroList, getHeroDetails } from '../services/api';
+import {getHeroDetails, queryHeroList} from '@/services/api';
+
+
 
 export default {
   state: {

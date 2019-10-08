@@ -1,4 +1,4 @@
-import styles from './hero.css';
+import styles from './index.css';
 import { connect } from 'dva';  //---step1
 function Summoner (props) {          //---step2
   console.log(props.summoner)      //---step4

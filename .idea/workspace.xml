@@ -3,10 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="380bd9ca-6b25-4be0-9ca2-ec80ce7dda9d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/hero.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/summoner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/summoner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/summoner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/summoner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.umirc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.umirc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/hero/models/hero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/item/models/item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/summoner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/summoner/models/summoner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/hero.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/hero.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/item.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/item/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/item/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/summoner.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/summoner/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/summoner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/summoner/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +35,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/summoner" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -38,6 +44,20 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/summoner/models" />
+      <recent name="$PROJECT_DIR$/src/pages/summoner" />
+      <recent name="$PROJECT_DIR$/src/pages/item/models" />
+      <recent name="$PROJECT_DIR$/src/pages/item" />
+      <recent name="$PROJECT_DIR$/src/pages/hero/models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/summoner" />
+      <recent name="$PROJECT_DIR$/src/pages/item" />
+      <recent name="$PROJECT_DIR$/src/pages/hero" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -61,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570524543421</updated>
-      <workItem from="1570524544692" duration="5125000" />
+      <workItem from="1570524544692" duration="7032000" />
     </task>
     <servers />
   </component>
