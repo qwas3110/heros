@@ -24,8 +24,10 @@ export default {
           /components\//,
         ],
       },
-    }],
+    }],'umi-plugin-gh-pages',
   ],
+  base: '/umi-course/',
+  publicPath: '/umi-course/',
   // "proxy": {
   //   "/api": {                                       //---step1 设置了需要代理的请求头，比如这里定义了 /api ，当你访问如 /api/abc 这样子的请求，就会触发代理
   //     "target": "https://pvp.qq.com/web201605/js/", //---step2 设置代理的目标，即真实的服务器地址
